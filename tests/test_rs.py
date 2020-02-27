@@ -87,8 +87,11 @@ def test_rs2(cfg):
     print('Use original T265 part class')
     V = dk.vehicle.Vehicle()
     V.mem['enc_vel_ms'] = 0.0
-    from realsense2 import T265
-    V.add(T265(image_output=True, debug=False),
+    try:
+        from donkeypart_t265 import FullDataReader
+    except:
+        raise
+    V.add(FullDataReader(image_output=True, debug=False),
         outputs=['pos_x', 'pos_y', 'pos_z',
             'vel_x', 'vel_y', 'vel_z',
             'gyr_x', 'gyr_y', 'gyr_z',
@@ -174,7 +177,7 @@ if __name__ == '__main__':
     cfg = dk.load_config()
     try:
         print('start')
-        from realsense2 import T265
+        from donkeypart_t265 import FullDataReader
     except:
         print('Use donkeycar RS_265 class instead of original T265 class') 
         test_rs(cfg)
