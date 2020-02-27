@@ -135,4 +135,4 @@ sudo shutdown -h now
 * 一部ライブラリのデバッグモードパッケージが存在しない
 * `udevadm trigger` に `sudo` がない
 * `cmake`、`protobuf`、TBB、OpenCVはbusterパッケージリポジトリのもので動作する
-* `make -j1`だと遅い（自分の環境では`make -j4`でもコンパイルできた）
+* `make -j1`だと遅い（自分の環境(4B)では`make -j4`でもコンパイルできた）が、3B+の場合は`-j1`以外で最後まで一気にコンパイル成功したことはない

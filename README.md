@@ -1,7 +1,10 @@
 # Intel RealSense Tracking Camera T265 全センサデータ取得可能なDonkeyパーツクラス
 
 Intel RealSense Tracking Camera T265 から取得可能な全センサデータをDonkeycarで使用できるパーツクラスを提供する。
-T265の概要は [こちら](./doc/t265.md) を参照のこと。
+
+* Intel RealSense Tracking Camera T265の座標系などの概要は [こちら](./doc/t265.md) を参照のこと。
+* [Raspberry Pi 3B/Streach 前提のlibrealsense/pyrealsense2 インストール手順](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_raspbian.md) は [公式リポジトリ](https://github.com/IntelRealSense/librealsense/) 上にドキュメント有り。
+* [Raspbean Lite Buster 上へのlibrealsense(pyrealsense2)インストールする手順](./doc/install_librealsense_on_buster.md) は [こちら](./doc/install_librealsense_on_buster.md) 。
 
 ## 取得可能データ
 
@@ -80,4 +83,4 @@ pip install -e .
 
 ## ライセンス
 
-本リポジトリのりそーすはすべて [MITライセンス](./LICENSE) 準拠とする。
+本リポジトリのリソースはすべて [MITライセンス](./LICENSE) 準拠とする。
